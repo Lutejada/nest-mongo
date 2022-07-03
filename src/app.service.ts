@@ -14,8 +14,13 @@ export class AppService {
     @Inject(config.KEY) private configService: ConfigType<typeof config>,
   ) {}
   getHello(): string {
-    const apiKey = this.configService.apiKey;
+    const apiKey = this.configService.database.apiKey;
     const name = this.configService.database.name;
     return `Hello World! ${apiKey} ${name}`;
+  }
+
+  getTaks(){
+    const taskColection = this.database.collection('task');
+    return taskColection.find().toArray();
   }
 }
