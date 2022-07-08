@@ -22,4 +22,4 @@ import { Product, ProductSchema } from './entities/product.entity';
   providers: [ProductsService, BrandsService, CategoriesService],
   exports: [ProductsService],
 })
-export class ProductsModule {}
+export class ProductsModule {};
