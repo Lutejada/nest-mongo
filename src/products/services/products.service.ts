@@ -22,10 +22,10 @@ export class ProductsService {
     }
     return product;
   }
-};
-  create(data: CreateProductDto) {
-    const newproduct = new this.productModel(data);
-    return newProduct(save);
+
+  create(data: CreateProductDto) {  // 👈
+    const newProduct = new this.productModel(data);
+    return newProduct.save();
   }
 
   update(id: string, changes: UpdateProductDto) {  // 👈
@@ -38,9 +38,7 @@ export class ProductsService {
     return product;
   }
 
-
   remove(id: string) {  // 👈
     return this.productModel.findByIdAndDelete(id);
   }
-};
-
+}  

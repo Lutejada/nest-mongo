@@ -28,6 +28,7 @@ import config from './config';
     UsersModule,
     ProductsModule,
     DatabaseModule,
+    
   ],
   controllers: [AppController],
   providers: [

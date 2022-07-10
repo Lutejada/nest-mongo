@@ -29,7 +29,7 @@ const API_KEY_PROD = 'PROD1212121SA';
         const database = client.db(dbName);
         return database;
      },
-     inject: [config.KEY]
+      inject: [config.KEY]
     },
   ],
   exports: ['API_KEY', 'MONGO'],
