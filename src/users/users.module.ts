@@ -12,4 +12,5 @@ import { ProductsModule } from '../products/products.module';
   controllers: [CustomerController, UsersController],
   providers: [CustomersService, UsersService],
 })
+// eslint-disable-next-line prettier/prettier
 export class UsersModule {}

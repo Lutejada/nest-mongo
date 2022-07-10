@@ -62,4 +62,4 @@ export class ProductsController {
 //   delete(@Param('id') id: string) {
 //     return this.productsService.remove(+id);
 //   }
-// }
+ };
